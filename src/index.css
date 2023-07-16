@@ -1,0 +1,28 @@
+* {
+  margin: 0px;
+  /* box-sizing: border-box; */
+  /* padding: 0px; */
+}
+
+.registrationContainer {
+  /* background: rgb(0,34,91);
+  background: linear-gradient(90deg, rgba(0,34,91,1) 0%, rgba(37,78,64,1) 50%, rgba(255,207,64,1) 100%); */
+  /* background-color: rgba(91, 107, 20, 0.699); */
+  /* background-color: rgba(91, 107, 20, 0.699); */
+  /* background-color: rgb(8, 8, 33); */
+  /* background-color: rgba(169, 145, 27, 0.866); */
+  /* background-image: url("https://t3.ftcdn.net/jpg/01/91/78/32/240_F_191783282_0TVrx5VrvrkpDHSKdjjI87HkbXJy5TMw.jpg"); */
+  /* background-size: cover; */
+  /* background-position: center; */
+  
+  
+}
+
+.welcomeContainer {
+  background-image: url(./assets/cogni-companion-logo.png);
+  /* background-image: url("https://images.unsplash.com/photo-1639946803429-b89f4024e751?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA5fHxuYXZ5JTIwYmx1ZSUyMGFic3RyYWN0fGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background-color: #00225B; */
+}
