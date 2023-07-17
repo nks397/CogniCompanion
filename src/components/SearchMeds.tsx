@@ -48,9 +48,10 @@ function handleClick(item: string) {
     //prevents duplicate drugNames from being added to the list
     if(drugName.includes(item)) {
       setError(`${drugName} has already been added`)
-      alert(error)
-      return
-    }else{
+      // alert(error)
+      // return
+    }
+    else{
     setUserDrugList(prev => ([
         ...prev,
        { 
@@ -66,6 +67,13 @@ function handleClick(item: string) {
     }
     setShowResults(false)
 }
+
+useEffect(() => {
+  if(error) {
+    alert(error)
+  }
+},[error])
+
 console.log(userDrugList, "drug list")
 
 console.log(searchTerm, "text")
