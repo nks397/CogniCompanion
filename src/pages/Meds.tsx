@@ -128,12 +128,15 @@ export default function Meds() {
               value={selectedOption}
               onChange={handleOptionChange}
             >
+              <MenuItem value="" disabled>
+                Select an option
+              </MenuItem>
               {selectOptions.map((item) => (
                 <MenuItem value={item}>{item}</MenuItem>
               ))}
             </Select>
             {remindedTimes.map((time, index) => (
-              <>
+              <div key={index}>
                 {days.map((day, dayIndex) => (
                   <div key={dayIndex}>
                     <label>
@@ -153,14 +156,16 @@ export default function Meds() {
                   value={time.time}
                   onChange={(e) => handleTimeChange(e, index)}
                 />
-              </>
+                <button onClick={() => removeTime(index)}>
+                  Remove Reminder
+                </button>
+              </div>
             ))}
             <button onClick={handleAddTime}>
               {remindedTimes.length === 0
                 ? "Add A Reminder"
                 : "Add Another Reminder"}
             </button>
-            <button onClick={removeTime}>Remove Reminder</button>
           </div>
           <div>
             {item?.howManyTimes}
