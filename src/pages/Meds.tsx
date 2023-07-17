@@ -25,6 +25,8 @@ export default function Meds() {
     times,
     setTimes,
     selectedOption,
+    setSelectedOption,
+    setRemindedTimes
   } = useContext(MedsContext);
   const [drugName, setDrugName] = useState<string>("");
   const [drugData, setDrugData] = useState<unknown[]>([]);
@@ -78,7 +80,10 @@ export default function Meds() {
       return updatedList;
     });
 
+    //reset inputs
     setTimes(0);
+    setRemindedTimes([]);
+    setSelectedOption("");
   }
 
   function handleDaysChange(e) {
